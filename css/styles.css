@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #000119;
+    color: #ffffff;
+}
+
+/* Main components */
+
+header {
+    padding: 50px 25px;
+    margin: 0 50px;
+    border-bottom: 1px solid #ffffff;
+}
+
+main, footer {
+    margin: 60px 120px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal; 
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+article {
+    margin: 100px 0;
+}
+
+#introduction-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Text components */
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 120px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h2, h3, h4, .main-section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 80px;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 50px;
+    font-weight: 200;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+p, li, th, td, label, button, address {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+#introduction-section {
+    margin-right: 20px;
+}
+
+.ele-before-last {
+    margin-bottom: 40px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300px;
+}
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-color: #ffffff;
+}
+
+th, td {
+    padding: 20px 40px;
+}
+
+/* Contact */
+
+form {
+    margin-bottom: 40px;
+}
+
+.field, #form-button {
+    margin: 20px 0;
+}
+
+input, textarea {
+    margin-left: 20px;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+input {
+    width: 500px;
+    height: 50px;
+}
+
+textarea {
+    width: 500px;
+    height: 100px;
+    resize: none;
+}
+
+address {
+    font-style: normal;
+}
+
+.alert-div {
+    display: none;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted #ffffff;
+    transition: 0.5s;
+}
+
+button {
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px dotted #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    transition: 0.5s;
+}
+
+a:hover, button:hover, a:focus, button:focus {
+    color: #9ca3ff;
+    border-bottom-color: #9ca3ff;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Images */
+
+#profile-picture {
+    width: 300px;
+    height: auto;
+    border: 1px solid #ffffff;
+    margin-left: 20px;
+}
+
+.img-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #ffffff;
+}
+
+.img-section img {
+    width: 550px;
+    height: auto;
+    border: 1px solid #ffffff;
+    margin: 20px;
+}
+
+#e-commerce-api-section {
+    flex-direction: row-reverse;
+}
+
+/* Media queries */
+
+@media (max-width: 1200px) {
+    .img-section, #e-commerce-api-section {
+        flex-direction: column;
+        border: none;
+    }
+
+    .img-section img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    #introduction-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #profile-picture {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 680px) {
+    p, li, th, td, label, button, address {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    table {
+        width: 300px;
+    }
+
+    th, td {
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    label {
+        display: inline-block;
+        padding-bottom: 20px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    input, textarea {
+        width: 250px;
+    }
+}
+
+@media (max-width: 580px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    h3, h4 {
+        font-weight: 300;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .ele-before-last {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 475px) {
+    p, li, th, td, label, button, address {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    table {
+        width: 200px;
+    }
+
+    th, td {
+        padding: 5px 10px;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    input, textarea {
+        width: 150px;
+    }
+
+    .img-section {
+        display: none;
+    }
+}
+
+@media (max-width: 370px) {
+    p, li, th, td, label, button, address {
+        font-size: 12px;
+    }
+
+    input, textarea {
+        width: 100px;
+    }
+}
+
+@media (max-width: 340px) {
+    th, td {
+        padding: 2.5px 5px;
+        font-size: 7px;
+        font-weight: 300;
+    }
+}
